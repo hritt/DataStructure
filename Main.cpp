@@ -10,11 +10,9 @@
 #include "SeqList.h"
 #include "LinkList.h"
 #include "SeqStack.h"
-#include "SeqQueue.h"
 #include "LinkStack.h"
+#include "SeqQueue.h"
 #include "LinkQueue.h"
-//#include "String.cpp"
-//#include "Array.cpp"
 
 int main()
 {
