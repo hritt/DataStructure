@@ -76,3 +76,4 @@ bool LinkQueue<T>::Empty()
 {
 	return front==rear;
 }
+

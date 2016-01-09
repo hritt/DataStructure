@@ -161,3 +161,4 @@ void LinkList<T>::Invert()
 		head->next=q;
 	}
 }
+
