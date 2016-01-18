@@ -29,24 +29,26 @@ using namespace std;
 
 /** string **/
 //see String.cpp
-
+int BFMatching(char * s,char * t);
+int KMPMatching(char * s,char * t);
 
 /** array **/
-//see Array.cpp
-int BFMatching(char * s,char * t);
+//see Array.h
+
 
 /** generalized list **/
-
+//see GenList.h
 
 /** tree **/
-
+//see Tree.h
 
 /** graph **/
-
+//see Graph.h
 
 /** search **/
-
+//see Search.cpp
 
 /** sorting **/
+//see Sort.cpp
 
 #endif

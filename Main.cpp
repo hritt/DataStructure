@@ -13,6 +13,7 @@
 #include "LinkStack.h"
 #include "SeqQueue.h"
 #include "LinkQueue.h"
+#include "Array.h"
 
 int main()
 {
@@ -82,9 +83,10 @@ int main()
 	cout<<linkqueue.DeQueue()<<endl;*/
 
 	/** string **/
-	char s[20]={18,'a','a','b','c','b','a','b','c','a','a','b','c','a','a','b','a','b','c'};
-	char t[20]={9,'a','b','c','a','a','b','a','b','c'};
-	cout<<BFMatching(s,t)<<endl;
+	//char s[20]={18,'a','a','b','c','b','a','b','c','a','a','b','c','a','a','b','a','b','c'};
+	//char t[20]={9,'a','b','c','a','a','b','a','b','c'};
+	////cout<<BFMatching(s,t)<<endl;
+	//cout<<KMPMatching(s,t)<<endl;
 
 	/** array **/
 
