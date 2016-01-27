@@ -1,4 +1,4 @@
-OBJECTS= Main.o String.o Array.o
+OBJECTS= Main.o String.o Search.o Sort.o
 
 prog: $(OBJECTS)
 	g++ $(OBJECTS) -o prog
@@ -9,7 +9,7 @@ prog: $(OBJECTS)
 #string.o: Main.h
 $(OBJECTS): Main.h
 Main.o: SeqList.h LinkList.h SeqStack.h LinkStack.h \
-	SeqQueue.h LinkQueue.h
+	SeqQueue.h LinkQueue.h Array.h GenList.h Graph.h Tree.h
 
 clean:
 	rm $(OBJECTS) prog

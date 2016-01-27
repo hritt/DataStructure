@@ -11,9 +11,9 @@
 
 #include <iostream>
 using namespace std;
+#include <vector>
 //#include <string>
 //#include <string.h>
-//#include <vector>
 
 /** linear list **/
 //sequence list，see SeqList.h ;because use class template, declaration and implement puted in one file
@@ -30,17 +30,21 @@ using namespace std;
 /** string **/
 //see String.cpp
 int BFMatching(char * s,char * t);
-int KMPMatching(char * s,char * t);
+void GetNext(char t[],int next[]);
+void GetNextVal(char t[],int nextval[]);
+int KMPMatching(char s[],char t[],int next[]);
 
 /** array **/
 //see Array.h
-
 
 /** generalized list **/
 //see GenList.h
 
 /** tree **/
-//see Tree.h
+//binary tree, see BiTree.cpp
+//threaded binary tree, see ThrBiTree.cpp
+//tree, see Tree.cpp
+//huffman tree, see HuffmanTree.h & HuffmanTree.cpp
 
 /** graph **/
 //see Graph.h

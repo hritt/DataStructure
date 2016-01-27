@@ -39,11 +39,8 @@ void GetNext(char t[],int next[])
 	}
 }
 
-int KMPMatching(char s[],char t[])
+int KMPMatching(char s[],char t[],int next[])
 {
-	int * next=new int[t[0]+1];
-	GetNext(t,next);
-
 	int i=1,j=1;
 	while(i<=s[0] && j<=t[0]){
 		if(j==0 || s[i]==t[j]){
@@ -56,4 +53,17 @@ int KMPMatching(char s[],char t[])
 		return i-j+1;
 	else
 		return 0;
+}
+
+void GetNextVal(char t[],int nextval[])
+{
+	nextval[1]=0;
+	int j=1,k=0;
+	while(j<t[0]){
+		if(k==0 || t[j]==t[k]){
+			j++; k++;
+			nextval[j]=( t[j]==t[k]? nextval[k] : k );//the different from GetNext();
+		}else
+			k=nextval[k];
+	}
 }

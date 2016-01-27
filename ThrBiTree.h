@@ -1,22 +1,25 @@
 /************************************************************************
 *
-*   Description: tree, use 'left-child, right-sibling representation'
+*   Description: threaded binary tree
 *
 *   Author & Data: JY Liu, 2016/01/27
 *
 ************************************************************************/
 
+enum BiThrNodeType{LINK,THREAD};
+
 template<class T>
-struct CSNode{
+struct BiThrNode{
+	BiThrNodeType ltype;
+	BiThrNodeType rtype;
 	T data;
-	CSNode<T> * child;
-	CSNode<T> * sibling;
+	BiThrNode<T> * lchild;
+	BiThrNode<T> * rchild;
 };
 
 template<class T>
-class CSTree{
-	CSNode<T> * root;
+class BiThrTree{
+	BiThrNode<T> * root;
 public:
-	CSTree();
-	~CSTree();
+	BiThrTree(){ root=NULL; }
 };
