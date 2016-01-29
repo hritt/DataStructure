@@ -17,7 +17,7 @@ template<class T>
 class BiTree{
 	BiNode<T> * root;
 	
-	CreatByPre(vector<T> &pre,int &i);
+	BiNode<T> *  CreatByPre(vector<T> &pre,int &i);
 public:
 	BiTree();
 	BiTree(vector<T> &pre);
@@ -50,6 +50,7 @@ BiTree<T>::BiTree(vector<T> &pre)
 template<class T>
 BiNode<T> * BiTree<T>::CreatByPre(vector<T> &pre,int &i)
 {
+	
 }
 
 template<class T>
@@ -90,19 +91,23 @@ void BiTree<T>::LevelOrder()
 template<class T>
 int BiTree<T>::Count()
 {
+	return NULL;
 }
 
 template<class T>
 int BiTree<T>::Height()
 {
+	return NULL;
 }
 
 template<class T>
 BiNode<T> * BiTree<T>::Search(T elem)
 {
+	return NULL;
 }
 
 template<class T>
 BiNode<T> * BiTree<T>::SearchParent(BiNode<T> * child)
 {
+	return NULL;
 }

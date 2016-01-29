@@ -83,7 +83,7 @@ void TestLinkStack()
 }
 
 /** queue **/
-//Sequence queue
+//sequence queue
 void TestSeqQueue()
 {
 	SeqQueue<int,5>  seqqueue;
@@ -152,10 +152,32 @@ void TestArray()
 }
 
 /** generalized list **/
-
+//... maybe i will write it future
 
 /** tree **/
+//binary tree
+void TestBiTree()
+{
+	char * s="abd**e**cf***";
+	vector<char> pre;
+	pre.assign(s,s+13);
+	BiTree<char> bitree(pre);
+}
 
+//threaded binary tree
+void TestBiThrTree()
+{
+}
+
+//tree
+void TestTree()
+{
+}
+
+//huffman tree
+void TestHuffmanTree()
+{
+}
 
 /** graph **/
 
@@ -175,6 +197,7 @@ int main()
 	//TestLinkQueue();
 	//TestString(3);
 	//TestArray();
+	TestBiTree();
 
 	return 0;
 }

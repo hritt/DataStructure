@@ -8,7 +8,7 @@
 
 enum GListNodeType{ATOM, LIST};
 
-template<calss T>
+template<class T>
 struct GListNode{
 	GListNodeType type;
 	union{
@@ -18,7 +18,7 @@ struct GListNode{
 	GListNode<T> * next;
 };
 
-template<calss T>
+template<class T>
 class GList{
 	GListNode<T> * head;
 public:
