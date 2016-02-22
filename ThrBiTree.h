@@ -2,7 +2,7 @@
 *
 *   Description: threaded binary tree
 *
-*   Author & Data: JY Liu, 2016/01/27
+*   Author & Data: JY Liu, 2016/02/21
 *
 ************************************************************************/
 
@@ -23,3 +23,5 @@ class BiThrTree{
 public:
 	BiThrTree(){ root=NULL; }
 };
+
+//to be continue

@@ -16,7 +16,7 @@ class SeqQueue{
 public:
 	SeqQueue();
 	void EnQueue(T item);
-	T DeQueue();
+	T DeQueue();  //in STL: void pop();
 	bool Empty();
 };
 

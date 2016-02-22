@@ -19,7 +19,7 @@
 #include "BiTree.h"
 #include "ThrBiTree.h"
 #include "HuffmanTree.h"
-#include "Graph.h"
+#include "AMGraph.h"
 
 /** linear list **/
 //sequence list
@@ -159,9 +159,49 @@ void TestArray()
 void TestBiTree()
 {
 	char * s="abd**e**cf***";
+	/**
+	*          a
+	*       ¨L   ¨K
+	*       b      c
+	*     ¨L ¨K  ¨L
+	*     d   e  f
+	**/
 	vector<char> pre;
 	pre.assign(s,s+13);
 	BiTree<char> bitree(pre);
+	bitree.PreOrder();
+	bitree.InOrder();
+	bitree.PostOrder();
+	bitree.LevelOrder();
+	cout<<bitree.Count()<<endl;
+	cout<<bitree.Height()<<endl;
+	BiNode<char> * p=bitree.Search('d');
+	if(p)
+		cout<<p->data<<endl;
+	else
+		cout<<"not exist."<<endl;
+	BiNode<char> * pp=bitree.SearchParent(p);
+	if(pp)
+		cout<<pp->data<<endl;
+	else
+		cout<<"parent not exist."<<endl;
+
+	char * sp="ABHFDECKG";
+	char * si="HBDFAEKCG";
+	vector<char> vp, vi;
+	vp.assign(sp,sp+9);
+	vi.assign(si,si+9);
+	BiTree<char> bitree2(vp,vi);
+	bitree2.LevelOrder();
+	cout<<bitree2.Height()<<endl;
+
+	BiTree<char> bitree3(bitree);
+	bitree3.LevelOrder();
+
+	BiTree<char> bitree4;
+	bitree4.LevelOrder();
+	cout<<bitree4.Count()<<endl;
+	cout<<bitree4.Height()<<endl;
 }
 
 //threaded binary tree
@@ -180,7 +220,16 @@ void TestHuffmanTree()
 }
 
 /** graph **/
-
+//adjacent matrix graph
+void TestAMGraph()
+{
+	int vexnum=5;
+	int edgenum=7;
+	int vexs[5]={0,1,2,3,4};
+	AMGraph<int> amgraph(DINETWORK,vexs,5,7);
+	//0 3 6  1 0 2  1 2 7  2 3 2  3 1 9  3 4 5  4 0 3
+	amgraph.PrintMatrix();
+}
 
 /** search **/
 
@@ -197,7 +246,8 @@ int main()
 	//TestLinkQueue();
 	//TestString(3);
 	//TestArray();
-	TestBiTree();
+	//TestBiTree();
+	TestAMGraph();
 
 	return 0;
 }

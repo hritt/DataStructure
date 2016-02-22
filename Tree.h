@@ -2,7 +2,7 @@
 *
 *   Description: tree, use 'left-child, right-sibling representation'
 *
-*   Author & Data: JY Liu, 2016/01/27
+*   Author & Data: JY Liu, 2016/02/21
 *
 ************************************************************************/
 
@@ -20,3 +20,5 @@ public:
 	CSTree();
 	~CSTree();
 };
+
+//to be continue

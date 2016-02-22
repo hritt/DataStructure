@@ -2,7 +2,7 @@
 *
 *   Description: huffman tree
 *
-*   Author & Data: JY Liu, 2016/01/27
+*   Author & Data: JY Liu, 2016/02/21
 *
 ************************************************************************/
 
@@ -18,3 +18,5 @@ public:
 	HuffmanTree(vector<HuffmanNode> & leaves);
 	~HuffmanTree();
 };
+
+//to be continue

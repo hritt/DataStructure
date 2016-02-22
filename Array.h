@@ -108,13 +108,13 @@ void SparseMatrix<T>::Print()
 	}
 
 	for(int i=0;i<rows;i++)
-		for(int j=0;j<cols;j++)
+		for(j=0;j<cols;j++)
 			matrix[i][j]=T(0);
 	for(int i=0;i<num;i++)
 		matrix[triList[i].r][triList[i].c]=triList[i].elem;
 	
 	for(int i=0;i<rows;i++){
-		for(int j=0;j<cols;j++)
+		for(j=0;j<cols;j++)
 			cout<<matrix[i][j]<<" ";
 		cout<<endl;
 	}
