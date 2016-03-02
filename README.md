@@ -20,10 +20,8 @@ Some datastructure code, only contain *.h and *.cpp
 * graph
 	* deep first search
 	* breadth first search
-	* Prim
-	* Kruskal
-	* Dijkstra
-	* Floyd
+	* minimum spanning tree: Prim, Kruskal
+	* shortest path: Dijkstra, Floyd
 * search
 	* sequence search 
 	* binary search
