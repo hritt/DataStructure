@@ -16,9 +16,26 @@ Some datastructure code, only contain *.h and *.cpp
 	* sparse matrix
 * generalized list
 * tree
+	* binary tree
 * graph
+	* deep first search
+	* breadth first search
+	* Prim
+	* Kruskal
+	* Dijkstra
+	* Floyd
 * search
+	* sequence search 
+	* binary search
+	* binary sort tree
 * sorting
+	* bubble sort (improvement)
+	* select sort
+	* insert sort
+	* shell sort
+	* quick sort
+	* heap sort
+	* merge sort
 
 (see more in Main.h)
 

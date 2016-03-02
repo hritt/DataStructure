@@ -9,7 +9,7 @@ prog: $(OBJECTS)
 #string.o: Main.h
 $(OBJECTS): Main.h
 Main.o: SeqList.h LinkList.h SeqStack.h LinkStack.h \
-	SeqQueue.h LinkQueue.h Array.h GenList.h Graph.h Tree.h
+	SeqQueue.h LinkQueue.h Array.h GenList.h BiTree.h AMGraph.h
 
 clean:
 	rm $(OBJECTS) prog
