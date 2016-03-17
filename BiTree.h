@@ -5,6 +5,10 @@
 *   Author & Data: JY Liu, 2016/01/18
 *
 ************************************************************************/
+
+#include <iostream>
+using namespace std;
+#include <vector>
 #include <queue>
 
 template<class T>

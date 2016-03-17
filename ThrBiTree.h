@@ -6,6 +6,9 @@
 *
 ************************************************************************/
 
+#include <iostream>
+using namespace std;
+
 enum BiThrNodeType{LINK,THREAD};
 
 template<class T>

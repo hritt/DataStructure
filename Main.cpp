@@ -158,7 +158,7 @@ void TestArray()
 //binary tree
 void TestBiTree()
 {
-	char * s="abd**e**cf***";
+	char s[]="abd**e**cf***";
 	/**
 	*          a
 	*       ¨L   ¨K
@@ -186,8 +186,8 @@ void TestBiTree()
 	else
 		cout<<"parent not exist."<<endl;
 
-	char * sp="ABHFDECKG";
-	char * si="HBDFAEKCG";
+	char sp[]="ABHFDECKG";
+	char si[]="HBDFAEKCG";
 	vector<char> vp, vi;
 	vp.assign(sp,sp+9);
 	vi.assign(si,si+9);

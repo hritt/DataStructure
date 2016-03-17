@@ -17,7 +17,7 @@ struct NodeQueue{
 
 template<class T>
 class LinkQueue{
-	Node<T> * front,* rear;
+	NodeQueue<T> * front,* rear;
 public:
 	LinkQueue();
 	~LinkQueue();
@@ -29,7 +29,7 @@ public:
 template<class T>
 LinkQueue<T>::LinkQueue()
 {
-	Node<T> * p=new Node<T>;
+	NodeQueue<T> * p=new NodeQueue<T>;
 	p->next=NULL;
 	front=rear=p;
 }
@@ -38,7 +38,7 @@ template<class T>
 LinkQueue<T>::~LinkQueue()
 {
 	while(rear!=front){
-		Node<T> * p=front;
+		NodeQueue<T> * p=front;
 		front=front->next;
 		delete p;
 	}
@@ -48,7 +48,7 @@ LinkQueue<T>::~LinkQueue()
 template<class T>
 void LinkQueue<T>::EnQueue(T item)
 {
-	Node<T> * p=new Node<T>;
+	NodeQueue<T> * p=new NodeQueue<T>;
 	p->data=item;
 	p->next=NULL;
 	rear->next=p;
@@ -62,7 +62,7 @@ T LinkQueue<T>::DeQueue()
 		cerr<<"queue is empty!"<<endl;
 		exit(1);
 	}
-	Node<T> * p=front->next;
+	NodeQueue<T> * p=front->next;
 	T t=p->data;
 	front->next=p->next;
 	if(p==rear)

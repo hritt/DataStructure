@@ -6,6 +6,10 @@
 *
 ************************************************************************/
 
+#include <iostream>
+#include <vector>
+using namespace std;
+
 template<class T>
 struct Triple{
 	int r,c;
@@ -14,7 +18,7 @@ struct Triple{
 
 template<class T>
 class SparseMatrix{//row first
-	vector<Triple<T>> triList;
+	vector< Triple< T > > triList;
 	int rows,cols,num;
 public:
 	SparseMatrix();

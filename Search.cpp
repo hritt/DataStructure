@@ -60,7 +60,7 @@ int BiSearch2(int data[],int low,int high,int k)
 		return mid;
 	else if(data[mid]>k)
 		return BiSearch2(data,low,mid-1,k);
-	else if(data[mid]<k)
+	else //if(data[mid]<k)
 		return BiSearch2(data,mid+1,high,k);
 }
 
@@ -110,7 +110,7 @@ BiSortNode * BiSortTree::Search(BiSortNode * ptr,int k)
 		return ptr;
 	else if(ptr->key > k)
 		return Search(ptr->lchild,k);
-	else if(ptr->key < k)
+	else //if(ptr->key < k)
 		return Search(ptr->rchild,k);
 }
 

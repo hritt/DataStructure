@@ -6,9 +6,13 @@
 *
 ************************************************************************/
 
+#include <iostream>
+using namespace std;
+#include <vector>
+#include <queue>
 #include <string>
-#include <limits.h>
-#define INFINITY _I32_MAX
+//#include <limits.h>
+#define INFINITY 0x7fffffff //_I32_MAX just can used on windows
 
 //undirected graph, directed draph, undirected network, directed network
 enum graphType{UNDIGRAPH, DIGRAPH, UNDINETWORK, DINETWORK};

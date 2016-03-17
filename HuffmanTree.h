@@ -6,6 +6,10 @@
 *
 ************************************************************************/
 
+#include <iostream>
+using namespace std;
+#include <vector>
+
 class HuffmanNode{
 	char data;
 	double weight;

@@ -37,7 +37,7 @@ void BubbleSort2(int a[],int n)
 				a[j]=a[j]^a[j+1];
 				exchange=true;
 			}
-		if(exchange=false)
+		if(exchange==false)
 			return;
 	}
 }
