@@ -41,3 +41,6 @@ Some datastructure code, only contain *.h and *.cpp
 
 * Windows: Visual Studio 2010
 * Mac OS X: Clang (use Mikefile)
+
+**cmake:**
+this folder is used to study CMakeLists.txt

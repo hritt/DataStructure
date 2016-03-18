@@ -4,6 +4,9 @@
 !*.cpp
 !*.md
 !Makefile
+!/cmake
+/cmake/*
+!/cmake/CMakeLists.txt
 
 # Windows image file caches
 Thumbs.db
