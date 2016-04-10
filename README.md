@@ -40,7 +40,7 @@ Some datastructure code, only contain *.h and *.cpp
 **Development environment & Compiling:**
 
 * Windows: Visual Studio 2010
-* Mac OS X: Clang (use Mikefile)
+* Mac OS X: CLion (clang)
 
-**cmake:**
-this folder is used to study CMakeLists.txt
+**cmake&makefile:**
+this folder is used to study CMakeLists.txt and makefile

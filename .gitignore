@@ -3,10 +3,9 @@
 !*.h
 !*.cpp
 !*.md
+!*.CMakeLists.txt
 !Makefile
-!/cmake
-/cmake/*
-!/cmake/CMakeLists.txt
+!/cmake&makefile
 
 # Windows image file caches
 Thumbs.db

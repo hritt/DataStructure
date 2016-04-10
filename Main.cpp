@@ -161,9 +161,9 @@ void TestBiTree()
 	char s[]="abd**e**cf***";
 	/**
 	*          a
-	*       ¨L   ¨K
+	*       ï¿½L   ï¿½K
 	*       b      c
-	*     ¨L ¨K  ¨L
+	*     ï¿½L ï¿½K  ï¿½L
 	*     d   e  f
 	**/
 	vector<char> pre;
