@@ -3,7 +3,7 @@
 !*.h
 !*.cpp
 !*.md
-!*.txt
+!CMakeLists.txt
 !makefile
 
 # Windows image file caches
