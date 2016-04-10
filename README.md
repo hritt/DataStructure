@@ -42,5 +42,5 @@ Some datastructure code, only contain *.h and *.cpp
 * Windows: Visual Studio 2010
 * Mac OS X: CLion (clang)
 
-**cmake&makefile:**
+**makefile:**
 this folder is used to study CMakeLists.txt and makefile
