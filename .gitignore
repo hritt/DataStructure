@@ -3,7 +3,7 @@
 !*.h
 !*.cpp
 !*.md
-!*.CMakeLists.txt
+!CMakeLists.txt
 !Makefile
 !/cmake&makefile/*
 
