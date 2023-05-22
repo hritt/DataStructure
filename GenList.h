@@ -5,24 +5,34 @@
 *   Author & Data: JY Liu, 2016/01/20
 *
 ************************************************************************/
+#ifndef GENLIST_H
+#define GENLIST_H
 
-enum GListNodeType{ATOM, LIST};
+enum GListNodeType { ATOM, LIST };
 
-template<class T>
-struct GListNode{
+template <class T>
+struct GListNode
+{
 	GListNodeType type;
-	union{
+
+	union
+	{
 		T data;
-		GListNode<T> * sublist;
+		GListNode<T>* sublist;
 	};
-	GListNode<T> * next;
+
+	GListNode<T>* next;
 };
 
-template<class T>
-class GList{
-	GListNode<T> * head;
+template <class T>
+class GList
+{
+	GListNode<T>* head;
+
 public:
-	GList();
-	~GList();
+	GList() = default;
+	~GList() = default;
 	//... maybe i will write it future
 };
+
+#endif // GENLIST_H

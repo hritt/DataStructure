@@ -5,52 +5,60 @@
 *   Author & Data: JY Liu, 2016/01/06
 *
 ************************************************************************/
+#ifndef SEQQUEUE_H
+#define SEQQUEUE_H
 
 #include <iostream>
 using namespace std;
 
-template<class T,int MaxSize>
-class SeqQueue{
+template <class T, int MaxSize>
+class SeqQueue
+{
 	T data[MaxSize];
-	int front,rear;
+	int front, rear;
+
 public:
 	SeqQueue();
 	void EnQueue(T item);
-	T DeQueue();  //in STL: void pop();
+	T DeQueue(); //in STL: void pop();
 	bool Empty();
 };
 
-template<class T,int MaxSize>
-SeqQueue<T,MaxSize>::SeqQueue()
+template <class T, int MaxSize>
+SeqQueue<T, MaxSize>::SeqQueue()
 {
-	front=0;
-	rear=0;
+	front = 0;
+	rear = 0;
 }
 
-template<class T,int MaxSize>
-void SeqQueue<T,MaxSize>::EnQueue(T item)
+template <class T, int MaxSize>
+void SeqQueue<T, MaxSize>::EnQueue(T item)
 {
-	if( (rear+1)%MaxSize== front ){
-		cerr<<"queue is full!"<<endl;
+	if ((rear + 1) % MaxSize == front)
+	{
+		cerr << "queue is full!" << endl;
 		exit(1);
 	}
-	rear=(rear+1)%MaxSize;
-	data[rear]=item;
+	rear = (rear + 1) % MaxSize;
+	data[rear] = item;
 }
 
-template<class T,int MaxSize>
-T SeqQueue<T,MaxSize>::DeQueue()
+template <class T, int MaxSize>
+T SeqQueue<T, MaxSize>::DeQueue()
 {
-	if( (front+1)%MaxSize==rear ){
-		cerr<<"queue is empty!"<<endl;
+	if ((front + 1) % MaxSize == rear)
+	{
+		cerr << "queue is empty!" << endl;
 		exit(1);
 	}
-	front=(front+1)%MaxSize;
+	front = (front + 1) % MaxSize;
 	return data[front];
 }
 
-template<class T,int MaxSize>
-bool SeqQueue<T,MaxSize>::Empty()
+template <class T, int MaxSize>
+bool SeqQueue<T, MaxSize>::Empty()
 {
-	return front==rear;
+	return front == rear;
 }
+
+#endif // SEQQUEUE_H

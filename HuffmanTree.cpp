@@ -6,13 +6,13 @@
 *
 ************************************************************************/
 
-#include "Main.h"
 #include "HuffmanTree.h"
-
-HuffmanTree::HuffmanTree(vector<HuffmanNode> & leaves)
+/*
+HuffmanTree::HuffmanTree(vector<HuffmanNode>& leaves)
 {
 }
 
 HuffmanTree::~HuffmanTree()
 {
 }
+*/

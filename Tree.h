@@ -5,20 +5,27 @@
 *   Author & Data: JY Liu, 2016/02/21
 *
 ************************************************************************/
+#ifndef TREE_H
+#define TREE_H
 
-template<class T>
-struct CSNode{
+template <class T>
+struct CSNode
+{
 	T data;
-	CSNode<T> * child;
-	CSNode<T> * sibling;
+	CSNode<T>* child;
+	CSNode<T>* sibling;
 };
 
-template<class T>
-class CSTree{
-	CSNode<T> * root;
+template <class T>
+class CSTree
+{
+	CSNode<T>* root;
+
 public:
-	CSTree();
-	~CSTree();
+	CSTree() = default;
+	~CSTree() = default;
 };
 
 //to be continue
+
+#endif // TREE_H
